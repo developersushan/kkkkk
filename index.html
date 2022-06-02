@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1 id="activity">sfdsdsg </h1>
+    <h4 id="username" >javascript object narations</h4>
+    <ul id="userlist-container">
+
+        <input id="title" type="text" value="" placeholder="username">
+        <span id="massage"></span>
+        <br>
+        <input id="bodyContent" type="text" placeholder="style body">
+        <br>
+        <button onclick="return myFunction()" >submit</button>
+        <ul id="containerMe">
+
+        </ul>
+
+
+    </ul> -->
+
+    <div id="containerDiv">
+        
+    </div>
+    <script>
+    //     async function loadData(){
+    //         fetch('https://jsonplaceholder.typicode.com/users/')
+    //         .then(res=>res.json())
+    //         .then(data=>{
+    //           displayNow(data)
+    //         })
+    //     }
+    //   loadData()
+
+//         function displayNow(user){
+//             const userName = user.map(user =>user.name)
+//             const private = document.getElementById('containerMe')
+//             for (let i = 0; i < userName.length; i++) {
+//                 const user =userName[i];
+//                 const createAlign= document.createElement('li')
+//                 createAlign.innerHTML=user
+//                 private.appendChild(createAlign)
+                
+//             }
+//         }
+
+//  async function name(name){
+//      return 'hello  me '+name
+//  }
+//  const getting = name('sushanto sen')
+//  console.log(getting)
+//  getting.then(res=>console.log(res))
+
+
+
+// async function loadData(){
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users/')
+//     const data = await response.json()
+   
+//     return data
+// }
+
+// loadData().then(data=>{
+//     displayNow(data)
+// })
+
+
+
+
+
+//   fetch('https://jsonplaceholder.typicode.com/users/')
+//   .then(res=>res.json())
+//   .then(data=>myFunction(data))
+//   function myFunction(user){
+//       const userName =user.map(user=>user.name)
+//       const ul=document.getElementById('containerMe')
+//       for(let i=0; i<userName.length;i++){
+//           const user=userName[i]
+//           const li=document.createElement('li')
+//           li.innerHTML=user
+//           ul.appendChild(li)
+//       }
+//   }
+
+
+
+// function myFunction(){
+//     const passWord = document.getElementById('title').value;
+//     if(passWord==''){
+//         document.getElementById('massage').innerHTML ='** try now  password';
+//         return false;
+//     }
+//     if(passWord.length<3){
+//         document.getElementById('massage').innerHTML ='** username must be 3 character';
+//         return false;
+//     }
+//     if(passWord.length>20){
+//         document.getElementById('massage').innerHTML ='** your name has been 20 character';
+//         return false
+        
+//     }
+// }
+
+    //     fetch('https://jsonplaceholder.typicode.com/comments')
+    //  .then(response => response.json())
+    //  .then(json => displayUser(json))
+
+    //  function displayUser(user){
+    //      const userName = user.map(user => user.email)
+    //      const ul=document.getElementById('userlist-container')
+    //      for(let i=0;i<userName.length;i++){
+    //          const user = userName[i];
+    //          const li=document.createElement("li")
+    //          li.innerText =user;
+    //          ul.appendChild(li)
+
+    //      }
+    //  }
+    // document.getElementById('submit').addEventListener('click', function(){
+    //     const title = document.getElementById('title').value;
+    //     const bodyContent =document.getElementById('bodyContent').value;
+    //     const post ={title:title,body:bodyContent}
+    //     displayUser(user)
+    //     alert('hello')
+
+
+    // })
+
+    // function newPostToServer(postInfo){
+    //     fetch('https://jsonplaceholder.typicode.com/posts',{
+    //     method:'POST',
+    //     body:JSON.stringify(postInfo),
+    //     headers: {
+    //  'Content-type': 'application/json; charset=UTF-8',
+    // },
+        
+    // })
+    // .then((response) =>response.json())  
+    // .then((data) => displayUser(data))
+    
+    // }
+
+    // function displayUser(user){
+    //     const userName = user.map(user => user.username)
+    //     const ul=document.getElementById('userlist-container')
+    //     for(let i=0; i<userName.length; i++){
+    //         const user = userName[i];
+    //         const li =document.createElement("li")
+    //         li.innerText=user;
+    //         ul.appendChild(li)
+
+    //     }
+    // }
+
+    // function doSameTing(){
+    //     fetch('http://www.boredapi.com/api/activity/')
+    // .then(res => res.json())
+    // .then(data => {
+    //     document.getElementById('activity').innerHTML=data.activity;
+    // })
+    // }
+    // doSameTing();
+    // setInterval(()=>{
+    //     doSameTing();
+    // },2000);
+
+
+//     const API_KEY = `46ad7457603b9b0104e633e78cd60e16`;
+// const searchTemperature = () => {
+//     const city = document.getElementById('city-name').value;
+//     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+
+//     fetch(url)
+//         .then(res => res.json())
+//         .then(data => displayTemperature(data));
+// }
+
+// const setInnerText = (id, text) => {
+//     document.getElementById(id).innerText = text;
+// }
+
+// const displayTemperature = temperature => {
+//     setInnerText('city', temperature.name);
+//     setInnerText('temperature', temperature.main.temp);
+//     setInnerText('condition', temperature.weather[0].main);
+    
+//     // set weather icon
+//     const url = `http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`;
+
+//     const imgIcon = document.getElementById('weather-icon');
+//     imgIcon.setAttribute('src', url);
+// }
+
+
+
+
+    </script>
+    <script src="api.js"></script>
+</body>
+</html>
