@@ -8,36 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1 id="activity">sfdsdsg </h1>
-    <h4 id="username" >javascript object narations</h4>
-    <ul id="userlist-container">
-
-        <input id="title" type="text" value="" placeholder="username">
-        <span id="massage"></span>
-        <br>
-        <input id="bodyContent" type="text" placeholder="style body">
-        <br>
-        <button onclick="return myFunction()" >submit</button>
-        <ul id="containerMe">
-
-        </ul>
-
-
-    </ul> -->
     <div class="contact" id="contact">
         <form action="">
             <div class="contactform">
-                <div class="form-control">
-                    <label for="">username:</label>
-                    <input class="inputform" type="text" value="" placeholder="@username">
-                </div>
                 <div class="form-control">
                     <label for="">Email:</label>
                     <input class="inputform" type="email" value="" placeholder="@Email-Address" required>
                 </div>
                 <div class="form-control">
                     <label for="">password:</label>
-                    <input class="inputform" type="password" value="" placeholder="@password" required >
+                    <input id="pswd" class="inputform" type="password" name="password" value="" placeholder="@password" required >
+                    <span id="massege" style="color: red;"></span>
+                </div>
+                <div class="form-control">
+                    <label for="">confirm password:</label>
+                    <input id="confirmpswd" class="inputform" type="password" value="" placeholder="@confirm password">
+                    <span id="confirmMasege" style="color: red;"></span>
                 </div>
                 <input onclick="loginFormButton()" class="newButton" type="button" value="sign up">
 

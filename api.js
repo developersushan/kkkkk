@@ -1,9 +1,33 @@
+
+
 function loginFormButton(){
+    const pswd= document.getElementById('pswd').value;
+    const confirm= document.getElementById('confirmpswd').value;
+    if(pswd==''){
+        document.getElementById('massege').innerHTML='please fill the password'
+        return false;
+    }
+    if(pswd.length<6){
+        document.getElementById('massege').innerHTML='password must be 8 characters'
+        return false;
+    }
+
+    if(pswd!=confirm){
+        document.getElementById('confirmMasege').innerHTML='dont match the confirm password '
+        return false;
+        
+    }
+    if(pswd == confirm){
+        alert('successfully complete!')
+    }
+
+
     const loginNow = document.getElementById('contact')
     loginNow.style.display='none'
     const countryDivs = document.getElementById('containerDiv')
     countryDivs.style.display='grid'
 }
+// api call function
 fetch('https://restcountries.com/v2/all')
 .then(res=>res.json())
 .then(data=>displayNow(data));
